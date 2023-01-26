@@ -66,12 +66,6 @@ curl -s -o /dev/null -iL -w "%{http_code}","%{size_download}" $1/$2/
 echo "  --> ${1}/${2}/"
 curl -s -o /dev/null -iL -w "%{http_code}","%{size_download}" $1/$2/.random
 echo "  --> ${1}/${2}/.random"
-curl -k -s -o /dev/null -iL -w "%{http_code}","%{size_download}" $1/$2..;/
-echo "  --> ${1}/${2}..;/"
-curl -k -s -o /dev/null -iL -w "%{http_code}","%{size_download}" $1/$2;/
-echo "  --> ${1}/${2};/"
-curl -k -s -o /dev/null -iL -w "%{http_code}","%{size_download}" $1/$2;../
-echo "  --> ${1}/${2};../"
 curl -k -s -o /dev/null -iL -w "%{http_code}","%{size_download}" -X TRACE $1/$2
 echo "  --> ${1}/${2} -X TRACE"
 
